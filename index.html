@@ -133,7 +133,8 @@
         </div>
       </div>
       <!----------- contact ----------->
-       <div id="contact">
+      
+      <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -149,11 +150,15 @@
                 <a href="images/CVJelena.pdf" download class="btn btn2">Download CV</a>
             </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="42b09f65-8006-431d-8fd2-e3d17cdb50ed">
+                    
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit Form</button>
+                    
                     </form>
                 </div>
             </div>
