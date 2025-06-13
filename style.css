@@ -15,11 +15,12 @@ body {
 }
 
 #header {
-    width: 100%;
-    height: 100vh;
+    width: 90%;
+    height: 120vh;
     background-image: url(images/IMG_6323\ 2-Photoroom.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .container {
